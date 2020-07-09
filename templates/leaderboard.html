@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+   <body>
+      <table class="table" border = 1>
+         <thead>
+            <th>Name</th>
+            <th>Score</th>
+         </thead>
+
+         {% for row in rows %}
+            <tr>
+               <td>{{row["name"]}}</td>
+               <td>{{row["score"]}}</td>
+            </tr>
+         {% endfor %}
+      </table>
+
+      <a href = "/home">Go back to home page</a>
+<style>
+body{
+  background-image:url('static/midboard.jpg');
+  background-size: 100%;
+
+}
+table.table{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 37%;
+  background-color: white;
+  border-collapse: collapse;
+  width: 80%;
+  font-size: 25px;
+
+}
+tr:nth-child(even) {background-color: #A9A9A9;}
+
+</style>
+   </body>
+</html>

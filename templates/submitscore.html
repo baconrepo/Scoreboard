@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 class="header"> Submit Your Pinball Score</h2>
+<div class="container">
+<form class="form" action="{{ url_for('addrec') }}" method="POST">
+  <label for = "name"> Name:</label><br>
+  <input type = "text" id= "name" name= "name" value=""><br>
+  <label for = "score"> Score:</label><br>
+  <input type="text" id="score" name="score" value=""<br>
+  <input type = "submit" value= "Submit">
+</form>
+</div>
+<style>
+body{
+  background-image:url('static/new4.jpg');
+  background-size: 100%;
+
+}
+
+h2{
+  color: #FFFFFF;
+  text-align:center;
+  align-self: center;
+  padding-top: 10px;
+  font-size: 50px;
+}
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-top: 20%;
+  margin-right: 30%;
+  position: absolute;
+  margin-left: 40%;
+  align-self: center;
+}
+</style>
+</body>
+</html>
